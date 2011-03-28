@@ -7,6 +7,19 @@ $(document).ready(function(){
 	$('#txtSearch').bind('change',function(){
       doSearch(); 
 	});
+	
+	$('#generar').click(function(){
+		var codes="";
+		$('.selectedList .code').each(function(){
+			var code = $(this).html();
+			code = code.trim();
+			codes += code + ',';  
+		});
+
+		window.location= "/print?codes="+codes;
+		
+	});
+	
 });
 
 
@@ -47,9 +60,9 @@ function dropProduct(event,ui){
 		ui.helper.removeClass('ui-draggable');
 		ui.helper.removeClass('ui-draggable-dragging');
 		ui.helper.attr('style','')
-		$('#selectedBox').append('<div class="producto">'+ui.helper.html() + '</div>');
+		$('.selectedList').append('<div class="producto">'+ui.helper.html() + '</div>');
 		
-		$('#selectedBox .producto').dblclick(function(){
+		$('.selectedList .producto').dblclick(function(){
 
 			$(this).remove();
 			var clickedName = $(this).find('.name').html();
@@ -57,5 +70,6 @@ function dropProduct(event,ui){
 		});
 		
 	}
-		//window.alert(ui.helper.find('.name').html());
 }
+
+ 

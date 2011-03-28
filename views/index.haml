@@ -4,10 +4,13 @@
 		%h4 seleccione lo que desea imprimir
 	.action
 		.button
-			%a{:href=>"#"} Generar
+			%form{:method => "post",:action => "/print"}
+				%input{:type => "hidden",:name => "selection",:id => "selection"}
+			%a#generar{:href=>"#"} Generar
 #selectedBox
 	%h4 Productos Seleccionados
-	%h5 Drag & Drop para moverlos
+	%h5 Drag & Drop para 
+	.selectedList
 #searchBox
 	.title Escoja los productos que quiere agregar
 	%input{:id=>"txtSearch",:name=>"txtSearch"}
@@ -16,6 +19,8 @@
 		- @names.each  do |@name|
 			- i+=1
 			.producto
+				.code
+					=@codes[i]
 				.name
 					=@name
 				.description
