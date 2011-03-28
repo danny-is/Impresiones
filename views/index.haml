@@ -1,0 +1,26 @@
+#nav
+	.title
+		%h1 Bienvenido al Sistema de Impresion de Display's
+		%h4 seleccione lo que desea imprimir
+	.action
+		.button
+			%a{:href=>"#"} Generar
+#selectedBox
+	%h4 Productos Seleccionados
+	%h5 Drag & Drop para moverlos
+#searchBox
+	.title Escoja los productos que quiere agregar
+	%input{:id=>"txtSearch",:name=>"txtSearch"}
+	.productList
+		- i=0
+		- @names.each  do |@name|
+			- i+=1
+			.producto
+				.name
+					=@name
+				.description
+					=@descriptions[i]
+				.price
+					=@prices[i]
+				.image
+					%img{:src=>"#{@images[i]}" , :style=>"display: none;"}

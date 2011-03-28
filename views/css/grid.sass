@@ -1,0 +1,84 @@
+@import compass/reset
+@import "compass/utilities/general/clearfix"
+@import 960/grid
+@import custom
+@import forms
+
+
+$ninesixty-columns: 16
+
+#container
+	+grid-container
+	+clearfix
+	#nav
+		+grid(16)
+		margin-top: 15px
+		margin-bottom: 15px
+		h1
+			color: blue
+			font-size: 20px
+			padding-left: 15px
+		h4
+			color: #333
+			font-size: 14px
+			padding-left: 15px
+		.title
+			+grid(13)
+			+alpha
+		.action
+			+grid(2)
+			+omega
+			.button
+				background-color: #333
+				a
+					padding: 5px
+					color: #fff
+					display: block
+	#searchBox
+		height: 600px
+		+grid-unit-base
+		+grid-width(11,-20px)
+		background-color: #efefef
+		.title
+			font-size: 16px
+			font-weight: bold
+			color: #333
+			margin: 10px
+		input
+			margin: 10px
+			padding: 10px
+		.productList
+			+clearfix
+
+	#selectedBox
+		+grid(5)	
+		background-color: #efefef
+		border: 1px solid #999
+		height: 600px
+		h4
+			color: #333
+			font-size: 16px
+			margin-top: 8px
+			margin-left: 8px
+			
+			
+		h5
+			color: #999
+			font-size: 12px
+			margin-left: 8px
+			margin-bottom: 8px
+			
+.producto
+	height: 35px
+	margin-bottom: 4px
+	+grid-unit-base
+	+grid-width(3,0px)
+	background-color: #efefef
+	border: 1px solid #333			
+.name
+	line-height: 13px
+	padding: 5px
+	color: #333
+	font-size: 11px
+.description,.price,.image
+	display: none

@@ -1,0 +1,196 @@
+/* line 14, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 10, ../../views/css/grid.sass */
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 13, ../../views/css/grid.sass */
+#container #nav {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 764px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 17, ../../views/css/grid.sass */
+#container #nav h1 {
+  color: blue;
+  font-size: 20px;
+  padding-left: 15px;
+}
+/* line 21, ../../views/css/grid.sass */
+#container #nav h4 {
+  color: #333333;
+  font-size: 14px;
+  padding-left: 15px;
+}
+/* line 25, ../../views/css/grid.sass */
+#container #nav .title {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 620px;
+  margin-left: 0;
+}
+/* line 28, ../../views/css/grid.sass */
+#container #nav .action {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 92px;
+  margin-right: 0;
+}
+/* line 31, ../../views/css/grid.sass */
+#container #nav .action .button {
+  background-color: #333333;
+}
+/* line 33, ../../views/css/grid.sass */
+#container #nav .action .button a {
+  padding: 5px;
+  color: white;
+  display: block;
+}
+/* line 37, ../../views/css/grid.sass */
+#container #searchBox {
+  height: 600px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 620px;
+  background-color: #efefef;
+}
+/* line 42, ../../views/css/grid.sass */
+#container #searchBox .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin: 10px;
+}
+/* line 47, ../../views/css/grid.sass */
+#container #searchBox input {
+  margin: 10px;
+  padding: 10px;
+}
+/* line 50, ../../views/css/grid.sass */
+#container #searchBox .productList {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 53, ../../views/css/grid.sass */
+#container #selectedBox {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 236px;
+  background-color: #efefef;
+  border: 1px solid #999999;
+  height: 600px;
+}
+/* line 58, ../../views/css/grid.sass */
+#container #selectedBox h4 {
+  color: #333333;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+/* line 65, ../../views/css/grid.sass */
+#container #selectedBox h5 {
+  color: #999999;
+  font-size: 12px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+/* line 71, ../../views/css/grid.sass */
+.producto {
+  height: 35px;
+  margin-bottom: 4px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+  background-color: #efefef;
+  border: 1px solid #333333;
+}
+
+/* line 78, ../../views/css/grid.sass */
+.name {
+  line-height: 13px;
+  padding: 5px;
+  color: #333333;
+  font-size: 11px;
+}
+
+/* line 83, ../../views/css/grid.sass */
+.description, .price, .image {
+  display: none;
+}
