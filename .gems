@@ -2,4 +2,3 @@ sinatra
 haml
 compass-960-plugin
 hpricot
-open-uri
