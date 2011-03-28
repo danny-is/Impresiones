@@ -2,3 +2,5 @@ sinatra
 haml
 compass-960-plugin
 hpricot
+wkhtmltopdf-binary
+pdfkit
