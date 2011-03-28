@@ -1,0 +1,7 @@
+This application uses a xml file to obtain a list of products.
+
+Filters them with javascript / jquery
+
+Enables Drag & Drop for Selection
+
+And Prints the result to .PDF using PDFKIT
