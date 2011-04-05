@@ -1,0 +1,58 @@
+@import "compass/css3/border-radius"
+
+.select
+	.producto
+		height: 35px
+		margin-bottom: 4px
+		background-color: #efefef
+		border: 1px solid #333
+	.name
+		line-height: 13px
+		padding: 5px
+		color: #333
+		font-size: 11px
+	.description,.price,.image,.code
+		display: none
+
+	#searchBox
+		.producto
+			+grid-unit-base
+			+grid-width(3,-5px)
+			+omega
+
+	#selectedBox
+		.producto
+			+grid(4)
+ 
+
+#print1
+	+clearfix	
+	.image
+		+grid(4)
+		text-align: center
+		img
+			border: 1px #afafaf solid
+			@include border-radius(13px, 13px)
+			width: 140px
+			height: 140px
+	.info
+		+grid(6)
+		+alpha
+		h1
+			margin-top: 8px
+			margin-bottom: 8px
+			font-size: 16px	
+			font-family: 'Cabin',Verdana
+		p
+			font-size: 11px
+			font-family: 'Droid Sans',Verdana
+		.price
+			font-family: 'Cabin',Verdana
+			margin-top: 8px
+			padding-top: 6px
+			padding-bottom: 6px
+			color: #244B84
+			font-size: 16px
+			border-top: 1px dotted #333
+			border-bottom: 1px dotted #333
+		

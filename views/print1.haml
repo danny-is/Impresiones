@@ -1,0 +1,25 @@
+#content
+	#breadcrum
+		%h1 
+
+#print1
+	- i=0
+	- @names.each  do |@name|
+		.producto
+			.image
+				%img{:src=>"#{@images[i]}"}
+			.info
+				.name
+					%h1
+						=@name
+					%p
+						=@descriptions[i]
+				.description
+					%h1 Especificaciones
+					%p
+						=@descriptions[i]
+				.price
+					$
+					=@prices[i]
+					i.v.i
+		- i+=1

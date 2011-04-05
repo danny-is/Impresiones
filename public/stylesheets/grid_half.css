@@ -222,41 +222,42 @@ a img {
   margin-bottom: 8px;
 }
 
-/* line 12, ../../views/css/grid.sass */
+/* line 12, ../../views/css/grid_half.sass */
 #container {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   overflow: hidden;
   *zoom: 1;
+  width: 500px;
 }
-/* line 16, ../../views/css/grid.sass */
+/* line 17, ../../views/css/grid_half.sass */
 #container #header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 18, ../../views/css/grid.sass */
+/* line 19, ../../views/css/grid_half.sass */
 #container #header #logo {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 380px;
+  width: 188px;
 }
-/* line 20, ../../views/css/grid.sass */
+/* line 21, ../../views/css/grid_half.sass */
 #container #header #banner {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 380px;
+  width: 188px;
 }
-/* line 22, ../../views/css/grid.sass */
+/* line 24, ../../views/css/grid_half.sass */
 #container #content {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 26, ../../views/css/grid.sass */
+/* line 28, ../../views/css/grid_half.sass */
 #container #footer .locations {
   display: inline;
   float: left;
@@ -264,131 +265,46 @@ a img {
   margin-right: 10px;
   width: 140px;
 }
-/* line 29, ../../views/css/grid.sass */
+/* line 31, ../../views/css/grid_half.sass */
 #container #copywrite #social {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 140px;
+  width: 92px;
 }
-/* line 31, ../../views/css/grid.sass */
+/* line 33, ../../views/css/grid_half.sass */
 #container #copywrite #url {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 140px;
+  width: 92px;
 }
-/* line 33, ../../views/css/grid.sass */
+/* line 35, ../../views/css/grid_half.sass */
 #container #copywrite #copy {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 140px;
-}
-/* line 36, ../../views/css/grid.sass */
-#container #half {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 380px;
-  width: 500px;
-}
-/* line 39, ../../views/css/grid.sass */
-#container #half #header {
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 41, ../../views/css/grid.sass */
-#container #half #header #logo {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 284px;
-}
-/* line 43, ../../views/css/grid.sass */
-#container #half #header #banner {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 140px;
-  margin-right: 0;
-}
-/* line 46, ../../views/css/grid.sass */
-#container #half #content {
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 50, ../../views/css/grid.sass */
-#container #half #footer .locations {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 92px;
-}
-/* line 52, ../../views/css/grid.sass */
-#container #half #copywrite {
-  text-align: center;
-}
-/* line 54, ../../views/css/grid.sass */
-#container #half #copywrite #social {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 92px;
-}
-/* line 56, ../../views/css/grid.sass */
-#container #half #copywrite #url {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 92px;
-}
-/* line 58, ../../views/css/grid.sass */
-#container #half #copywrite #copy {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 92px;
 }
 
-/* line 62, ../../views/css/grid.sass */
-#logo img {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-/* line 66, ../../views/css/grid.sass */
-#banner img {
-  position: relative;
-  top: 15px;
-  left: 20px;
-}
-
-/* line 71, ../../views/css/grid.sass */
+/* line 38, ../../views/css/grid_half.sass */
 #breadcrum {
   background-image: url("/images/print_nav.jpg");
   background-repeat: repeat-x;
   height: 53px;
   margin-bottom: 20px;
 }
-/* line 76, ../../views/css/grid.sass */
+/* line 43, ../../views/css/grid_half.sass */
 #breadcrum h1 {
   text-align: center;
 }
 
-/* line 79, ../../views/css/grid.sass */
+/* line 46, ../../views/css/grid_half.sass */
 #footer {
   background-image: url("/images/print_footer.jpg");
   background-repeat: repeat-x;
-  height: 80px;
+  height: 100px;
 }

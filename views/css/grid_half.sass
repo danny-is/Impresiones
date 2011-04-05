@@ -12,13 +12,15 @@ $ninesixty-columns: 16
 #container
 	+grid-container
 	+clearfix
+	width: 500px
 	
 	#header
 		+clearfix
 		#logo
-			+grid(8)
+			+grid(4)
 		#banner
-			+grid(8)
+			+grid(4)
+
 	#content
 		+clearfix
 
@@ -27,47 +29,12 @@ $ninesixty-columns: 16
 			+grid(3)
 	#copywrite
 		#social
-			+grid(3)
+			+grid(2)
 		#url
-			+grid(3)
+			+grid(2)
 		#copy
-			+grid(3)
-	
-	#half
-		+grid(8)
-		width: 500px
-		#header
-			+clearfix
-			#logo
-				+grid(6)
-			#banner
-				+grid(3)
-				+omega
-		#content
-			+clearfix
-
-		#footer
-			.locations
-				+grid(2)
-		#copywrite
-			text-align: center
-			#social
-				+grid(2)
-			#url
-				+grid(2)
-			#copy
-				+grid(2)
-
-#logo
-	img
-		margin-left: 10px
-		margin-top: 10px
-#banner
-	img
-		position: relative
-		top: 15px
-		left: 20px
-
+			+grid(2)
+			
 #breadcrum
 	background-image: url('/images/print_nav.jpg')
 	background-repeat: repeat-x
@@ -79,6 +46,6 @@ $ninesixty-columns: 16
 #footer
 	background-image: url('/images/print_footer.jpg')
 	background-repeat: repeat-x
-	height: 80px
+	height: 100px
 
 

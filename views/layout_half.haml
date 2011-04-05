@@ -12,11 +12,13 @@
 		%link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Cabin|DroidSans", :type => "text/css"}/
 		%body
 			#container	
-				#header
-					#logo
-						%img{:src => "/images/print_logo.jpg"}
-					#banner
-						%img{:src => "/images/print_banner.jpg"}
-				!= yield
-				#footer
- 
+				#half
+					#header
+						#logo
+							%img{:src => "/images/print_logo.jpg"}
+						#banner
+							%img{:src => "/images/print_banner.jpg"}
+					!= yield
+					#footer
+					#copywrite
+						%img{:src => "/images/copy.jpg"}

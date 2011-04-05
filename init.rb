@@ -39,7 +39,12 @@ get '/print' do
    
    end
   
-   haml :print
+  if arr.length ==1
+   haml :print1 , {:layout => :layout_half}
+ else arr.length == 6
+   haml :print6
+ end
+   
 end
 
 get '/' do
@@ -63,7 +68,7 @@ get '/' do
  	  @codes[i]= (@doc/"code")[i].inner_html
 		@names[i]= (@doc/"name")[i].inner_html
 		@descriptions[i]= (@doc/"description")[i].inner_html
-		@images[i]= (@doc/"image_small")[i].inner_html 
+		#@images[i]= (@doc/"image_small")[i].inner_html 
 		@prices[i]= (@doc/"sellprice_us")[i].inner_html
 		end
  haml :index
