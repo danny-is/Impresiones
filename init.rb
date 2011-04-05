@@ -20,7 +20,7 @@ get '/print' do
  	 @images = []
    @prices = []
    
-   f =  open("http://localhost:9393/productfeed.xml") do |f|
+   f =  open("http://btc.cr/productfeed.xml") do |f|
    doc = Hpricot.XML(f)
      i=0
     arr.each do |code|
@@ -49,7 +49,7 @@ end
 
 get '/' do
   
- f = open("http://localhost:9393/productfeed.xml") do |f|
+ f = open("http://btc.cr/productfeed.xml") do |f|
  @doc = Hpricot.XML(f)
   
   #fh = File.open("/public/productfeed.xml","r")
