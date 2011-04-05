@@ -58,6 +58,7 @@ a img {
   border: none;
 }
 
+@import url(forms.css);
 /* line 4, ../../views/css/_list.sass */
 .select .producto {
   height: 35px;
@@ -98,8 +99,11 @@ a img {
 #print1 {
   overflow: hidden;
   *zoom: 1;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
 }
-/* line 30, ../../views/css/_list.sass */
+/* line 33, ../../views/css/_list.sass */
 #print1 .image {
   display: inline;
   float: left;
@@ -108,7 +112,7 @@ a img {
   width: 184px;
   text-align: center;
 }
-/* line 33, ../../views/css/_list.sass */
+/* line 36, ../../views/css/_list.sass */
 #print1 .image img {
   border: 1px #afafaf solid;
   -webkit-border-radius: 13px 13px;
@@ -120,7 +124,7 @@ a img {
   width: 140px;
   height: 140px;
 }
-/* line 38, ../../views/css/_list.sass */
+/* line 41, ../../views/css/_list.sass */
 #print1 .info {
   display: inline;
   float: left;
@@ -129,19 +133,19 @@ a img {
   width: 280px;
   margin-left: 0;
 }
-/* line 41, ../../views/css/_list.sass */
+/* line 44, ../../views/css/_list.sass */
 #print1 .info h1 {
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: 16px;
   font-family: "Cabin", Verdana;
 }
-/* line 46, ../../views/css/_list.sass */
+/* line 49, ../../views/css/_list.sass */
 #print1 .info p {
   font-size: 11px;
   font-family: "Droid Sans", Verdana;
 }
-/* line 49, ../../views/css/_list.sass */
+/* line 52, ../../views/css/_list.sass */
 #print1 .info .price {
   font-family: "Cabin", Verdana;
   margin-top: 8px;
@@ -153,18 +157,15 @@ a img {
   border-bottom: 1px dotted #333333;
 }
 
-/* line 2, ../../views/css/_select.sass */
-#breadcrum .button {
-  background-color: #333333;
-}
 /* line 4, ../../views/css/_select.sass */
 #breadcrum .button a {
   padding: 5px;
   color: white;
   display: block;
+  padding-top: 8px;
 }
 
-/* line 9, ../../views/css/_select.sass */
+/* line 10, ../../views/css/_select.sass */
 #searchBox {
   height: 600px;
   display: inline;
@@ -176,25 +177,25 @@ a img {
   margin-right: 0;
   background-color: #efefef;
 }
-/* line 16, ../../views/css/_select.sass */
+/* line 17, ../../views/css/_select.sass */
 #searchBox .title {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
   margin: 10px;
 }
-/* line 21, ../../views/css/_select.sass */
+/* line 22, ../../views/css/_select.sass */
 #searchBox input {
   margin: 10px;
   padding: 10px;
 }
-/* line 24, ../../views/css/_select.sass */
+/* line 25, ../../views/css/_select.sass */
 #searchBox .productList {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 27, ../../views/css/_select.sass */
+/* line 28, ../../views/css/_select.sass */
 #selectedBox {
   display: inline;
   float: left;
@@ -207,14 +208,14 @@ a img {
   border: 1px solid #999999;
   height: 600px;
 }
-/* line 34, ../../views/css/_select.sass */
+/* line 35, ../../views/css/_select.sass */
 #selectedBox h4 {
   color: #333333;
   font-size: 16px;
   margin-top: 8px;
   margin-left: 8px;
 }
-/* line 41, ../../views/css/_select.sass */
+/* line 42, ../../views/css/_select.sass */
 #selectedBox h5 {
   color: #999999;
   font-size: 12px;
