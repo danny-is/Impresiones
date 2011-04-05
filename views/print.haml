@@ -1,1 +1,15 @@
-d
+- i=0
+- @names.each  do |@name|
+
+	.producto
+		.code
+			=@codes[i]
+		.name
+			=@name
+		.description
+			=@descriptions[i]
+		.price
+			=@prices[i]
+		.image
+			%img{:src=>"#{@images[i]}" , :style=>"display: none;"}
+		- i+=1
