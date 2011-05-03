@@ -1,0 +1,25 @@
+.contentBox
+	#loading
+		%h1 Cargando Informacion, favor espere.....
+	#select
+		#content.select
+			#selectedBox
+				%h4 Ingrese el Titulo
+				%input{:id=>"txt_titulo"}
+				%a{:href => "#print/"} Generar Impresion
+				%h4 Productos Seleccionados
+				%ul.selectedList
+			#searchBox
+				.title Escoja los productos que quiere agregar
+				%input{:id=>"txtSearch",:name=>"txtSearch",:onchange=>"doSearchProductos(event);return false;"}
+				%ul.productosList
+	#printHalf
+		%ul.itemList
+		%ul.itemList
+		%a{:href=>"#toPdf/",:id=>"pdfBtn"} Print
+	#printFull
+		%ul.itemsList
+		%a{:href=>"#toPdf/",:id=>"pdfBtn"} Print
+		
+-['sammy', 'sammy.json', 'sammy.storage', 'sammy.template','/impresiones/app'].each do |js|
+	%script{:src => "/js/#{js}.js", :type => 'text/javascript', :charset => 'utf-8'}

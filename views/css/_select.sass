@@ -1,16 +1,105 @@
-#breadcrum
-	.button
+$ninesixty-columns: 16
 
-		a
-			padding: 5px
-			color: #fff
-			display: block
-			padding-top: 8px
+.itemList
+	+grid-unit-base
+	+grid-width(8,-10px)
+	+alpha
+	.imagen
+		margin-top: 20px
+		border: 1px solid #333
+		+grid-unit-base
+		+grid-width(4,-20px)
+		overflow: hidden
+		+alpha
+		+omega
+		text-align: center
+		margin: 15px
+		img
+			max-width: 200px
+			max-height: 200px
+	.details
+		margin-top: 20px
+		+grid-unit-base
+		+grid-width(4,-5px)
+		+alpha
+		+omega
+		h2
+			font-size: 20px
+			font-weight: bold
+			margin-bottom: 3px
+			margin-top: 20px
+			display:block
+		h3
+			font-size: 20px
+			font-weight: bold
+			color: #244B84
+			border-top: 3px dotted #efefef
+			border-bottom: 3px dotted #efefef
+			padding-top: 4px
+			padding-bottom: 4px
+			margin-top: 7px
+			margin-bottom: 7px
+		h4
+			margin-top: 40px
+			font-size: 17px
+			min-height: 100px
+		ul
+			overflow: hidden
+			margin-bottom: 5px
+			margin-top: 40px
+			li
+				font-size: 15px
+				padding: 0px
+				margin: 0px
+				margin-bottom: 7px
+				text-transform: capitalize
+				
+.itemsList
+	>li
+		margin-top: 30px
+		+grid-unit-base
+		width: 220px
+		height: 300px
+		overflow: hidden
+		padding-left: 65px
+		
+		h2
+			font-size: 15px
+			font-weight: bold
+			width: 200px
+			margin-bottom: 3px
+		h3
+			font-size: 19px
+			font-weight: bold
+
+			width: 200px
+			color: #244B84
+		.imagen
+			overflow: hidden
+			margin-left: 25	px
+			width: 130px
+			height: 130px
+			img
+				width: 130px
+				height: 130px
+		ul
+			max-height: 92px
+			overflow: hidden
+			margin-bottom: 5px
+			
+			li
+				font-size: 12px
+				padding: 0px
+				margin: 0px
+				margin-bottom: 3px
+				text-transform: capitalize
+		
+	
 
 #searchBox
 	height: 600px
 	+grid-unit-base
-	+grid-width(10,-70px)
+	+grid-width(12,-10px)
 	border: 1px solid #999
 	+omega
 	background-color: #efefef
@@ -22,8 +111,16 @@
 	input
 		margin: 10px
 		padding: 10px
-	.productList
-		+clearfix
+	li
+		+grid-unit-base
+		+grid-width(3,-5px)
+		background-color: #efefef
+		height: 80px
+		padding: 10px
+		border: 1px #333 solid
+		margin-bottom: 10px
+		a
+			color: #333
 
 #selectedBox
 	+grid(5)	
@@ -37,10 +134,15 @@
 		font-size: 16px
 		margin-top: 8px
 		margin-left: 8px
-	
-	
 	h5
 		color: #999
 		font-size: 12px
 		margin-left: 8px
 		margin-bottom: 8px
+	li
+		background-color: #efefef
+		padding: 10px
+		border: 1px #333 solid
+		margin: 6px
+		a
+			color: #333
