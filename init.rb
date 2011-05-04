@@ -8,6 +8,18 @@ require 'soap/wsdlDriver'
 require 'json'
 require 'pdfkit'
  
+ configure :production do
+   
+   PDFKit.configure do |config|       
+
+          config.wkhtmltopdf = APP_ROOT + '/bin/wkhtmltopdf-amd64'  
+
+     end
+     
+   end
+ 
+ 
+ 
 def object_import(xml_data)
 		
 		product_hash = {}
@@ -30,16 +42,19 @@ end
 get '/toPdf' do
   APP_ROOT = File.dirname(__FILE__)
   
+  
+  
   html = params['html'];
   #html.inspect
   kit = PDFKit.new(html, :page_size => 'Letter')
  kit.stylesheets << APP_ROOT + '/public/stylesheets/grid.css'
 
-  # Git an inline PDF
-  pdf = kit.to_pdf
-  file = kit.to_file(APP_ROOT + '/public/temp/print.pdf')
-  f = APP_ROOT + '/public/temp/print.pdf';
-  send_file(f, :disposition => 'attachment', :filename => File.basename(f))
+   send_data(kit.to_pdf)
+ # Git an inline PDF
+  #pdf = kit.to_pdf
+  #file = kit.to_file(APP_ROOT + '/public/temp/print.pdf')
+  #f = APP_ROOT + '/public/temp/print.pdf';
+  #send_file(f, :disposition => 'attachment', :filename => File.basename(f))
   
 end
 
