@@ -122,7 +122,7 @@ $(document).ready(function(){
 		});
 
 		this.bind('handleToPdf',function(e, data){
-			window.location = '/tmp/print.pdf'
+			window.location = '/tmp/print1.pdf'
 		});
 
 		this.bind('handleToPdfError',function(e, data){
