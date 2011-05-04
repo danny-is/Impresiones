@@ -39,11 +39,13 @@ def object_import(xml_data)
 	return product_hash
 end
 
+ 
+
 post '/toPdf' do
   APP_ROOT = File.dirname(__FILE__)
   
  
-  html = '<body>test<h1>test</h1></body>'#params['html'];
+  html = params['html'];
   #html.inspect
   kit = PDFKit.new(html, :page_size => 'Letter')
  kit.stylesheets << APP_ROOT + '/public/stylesheets/grid.css'
@@ -54,14 +56,11 @@ post '/toPdf' do
   file = kit.to_file(APP_ROOT + '/tmp/ab.pdf')
   f = APP_ROOT + '/tmp/ab.pdf';
   send_file(f,  :type => 'application/pdf', :filename => "ab.pdf")
-  #redirect '/temp/print.pdf'
-  
-  #pdf = kit.to_pdf
   
 end
 
 get '/print' do
-  haml :test
+  haml :print
 end
 
 

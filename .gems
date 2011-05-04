@@ -4,3 +4,4 @@ compass-960-plugin
 hpricot
 wkhtmltopdf-binary
 pdfkit
+doc_raptor

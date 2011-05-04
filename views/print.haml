@@ -1,15 +1,14 @@
-- i=0
-- @names.each  do |@name|
 
-	.producto
-		.code
-			=@codes[i]
-		.name
-			=@name
-		.description
-			=@descriptions[i]
-		.price
-			=@prices[i]
-		.image
-			%img{:src=>"#{@images[i]}" , :style=>"display: none;"}
-		- i+=1
+%h1 Lista la impresion de click en Imprimir Ahora para descargar el PDF....
+
+%form{ :action=>"/toPdf" ,  :method=>"post"}
+	%input{:name=>"html" ,:id=>"html",:type=>"hidden" ,:value=>""}
+	%input{:type=>"submit" ,:value=>"Imprimir Ahora" }
+	
+:javascript
+	$(document).ready(function(){
+		var html = localStorage['store.body.btc-impresiones.html'];
+		$('#html').val(html);
+		$('.half').hide();
+	});
+	
