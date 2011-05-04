@@ -2,6 +2,25 @@ var app;
 var store;
 var cart;
 
+
+jQuery.download = function(url, data, method){
+	//url and data options required
+	if( url && data ){ 
+		//data can be string of parameters or array/object
+		data = typeof data == 'string' ? data : jQuery.param(data);
+		//split params into form inputs
+		var inputs = '';
+		jQuery.each(data.split('&'), function(){ 
+			var pair = this.split('=');
+			inputs+='<input type="hidden" name="'+ pair[0] +'" value="'+ pair[1] +'" />'; 
+		});
+		//send request
+		jQuery('<form action="'+ url +'" method="'+ (method||'post') +'">'+inputs+'</form>')
+		.appendTo('body').submit().remove();
+	};
+};
+
+
 var Producto = Model("producto", function() {
   this.extend({
     find_by_titulo: function(titulo) {
@@ -105,20 +124,23 @@ $(document).ready(function(){
 			var context = this;
 			var html = $('body').html();
 			var j = encodeURIComponent(html);
+			
+			$.download('/toPdf',"html=" + j );
+
 		//	window.location='toPdf?html='+j;
 			//var j = this.json(html);
-			$.ajax({
-				url: "/toPdf",
-				data: "html=" + j,
-				type:"POST",
-				context: document.body,
-				success: function(data){
-					context.trigger('handleToPdf',{all: data});
-				},
-				error: function(re,text,error) {
-					context.trigger('handleToPdfError',{request: re , text: text , error: error});
-				}
-			});
+			//$.ajax({
+			//	url: "/toPdf",
+			//	data: "html=" + j,
+			//	type:"POST",
+			//	context: document.body,
+			//	success: function(data){
+			//		context.trigger('handleToPdf',{all: data});
+			//	},
+			//	error: function(re,text,error) {
+			//		context.trigger('handleToPdfError',{request: re , text: text , error: error});
+			//	}
+			//});
 		});
 
 		this.bind('handleToPdf',function(e, data){
