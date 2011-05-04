@@ -42,7 +42,7 @@ end
 post '/toPdf' do
   APP_ROOT = File.dirname(__FILE__)
   
-  
+  Mime::Type.register_alias "application/pdf", :pdf
   
   html = params['html'];
   #html.inspect
@@ -52,9 +52,9 @@ post '/toPdf' do
    #send_data(kit.to_pdf) 
  # Git an inline PDF
   pdf = kit.to_pdf
-  file = kit.to_file(APP_ROOT + '/tmp/print1.pdf')
-  f = APP_ROOT + '/tmp/print1.pdf';
-  send_file(f, :disposition => 'attachment', :filename => File.basename(f))
+  file = kit.to_file(APP_ROOT + '/tmp/print2.pdf')
+  f = APP_ROOT + '/tmp/print2.pdf';
+  send_file(f,  :type => 'application/pdf', :filename => "DocRaptor.pdf")
   #redirect '/temp/print.pdf'
   
   #pdf = kit.to_pdf
