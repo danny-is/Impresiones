@@ -76,7 +76,7 @@ get '/getData' do
   ENV['SHOWSOAP'] = 'true'
   url = 'http://www.btc.cr/CatalystWebService/CatalystEcommerceWebservice.asmx?WSDL'
 	driver = SOAP::WSDLDriverFactory.new(url).create_rpc_driver
-	driver.options['protocol.http.ssl_config.verify_mode'] = OpenSSL::SSL::VERIFY_NONE
+	#driver.options['protocol.http.ssl_config.verify_mode'] = OpenSSL::SSL::VERIFY_NONE
 	result= driver.Product_ListRetrieve(:Username=> "rrodriguez@incompanysolutions.com",:Password => "monomono",:SiteId =>100917,:CatalogId =>"-1")
   return object_import(result).to_json;
   
