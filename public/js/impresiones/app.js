@@ -104,12 +104,24 @@ $(document).ready(function(){
 			var context = this;
 			var html = $('body').html();
 			var j = encodeURIComponent(html);
-			window.location='toPdf?html='+j;
-		
+		//	window.location='toPdf?html='+j;
+			//var j = this.json(html);
+			$.ajax({
+				url: "/toPdf",
+				data: "html=" + j,
+				type:"POST",
+				context: document.body,
+				success: function(data){
+					context.trigger('handleToPdf',{all: data});
+				},
+				error: function(re,text,error) {
+					context.trigger('handleToPdfError',{request: re , text: text , error: error});
+				}
+			});
 		});
 
 		this.bind('handleToPdf',function(e, data){
-			alert(data);
+			window.location = '/temp/print.pdf'
 		});
 
 		this.bind('handleToPdfError',function(e, data){
