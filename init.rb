@@ -9,7 +9,7 @@ require 'json'
 require 'pdfkit'
  
  configure :production do
-   
+   APP_ROOT = File.dirname(__FILE__)
    PDFKit.configure do |config|       
 
           config.wkhtmltopdf = APP_ROOT + '/bin/wkhtmltopdf-amd64'  
