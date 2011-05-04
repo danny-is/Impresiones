@@ -101,6 +101,7 @@ $(document).ready(function(){
 		});
 		
 		this.get('#toPdf/',function(){
+			#('#pdfBtn').hide();
 			var context = this;
 			var html = $('body').html();
 			var j = encodeURIComponent(html);
