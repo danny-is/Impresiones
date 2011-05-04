@@ -52,8 +52,8 @@ post '/toPdf' do
    #send_data(kit.to_pdf) 
  # Git an inline PDF
   pdf = kit.to_pdf
-  file = kit.to_file(APP_ROOT + '/public/tmp/print.pdf')
-  f = APP_ROOT + '/public/tmp/print.pdf';
+  file = kit.to_file(APP_ROOT + '/tmp/print.pdf')
+  f = APP_ROOT + '/tmp/print.pdf';
   send_file(f, :disposition => 'attachment', :filename => File.basename(f))
   #redirect '/temp/print.pdf'
 end

@@ -121,7 +121,7 @@ $(document).ready(function(){
 		});
 
 		this.bind('handleToPdf',function(e, data){
-			window.location = '/temp/print.pdf'
+			window.location = '/tmp/print.pdf'
 		});
 
 		this.bind('handleToPdfError',function(e, data){
