@@ -51,9 +51,9 @@ post '/toPdf' do
    #send_data(kit.to_pdf) 
  # Git an inline PDF
   #pdf = kit.to_pdf
-  file = kit.to_file(APP_ROOT + '/tmp/print2.pdf')
-  f = APP_ROOT + '/tmp/print2.pdf';
-  send_file(f,  :type => 'application/pdf', :filename => "DocRaptor.pdf")
+  file = kit.to_file(APP_ROOT + '/tmp/ab.pdf')
+  f = APP_ROOT + '/tmp/ab.pdf';
+  send_file(f,  :type => 'application/pdf', :filename => "ab.pdf")
   #redirect '/temp/print.pdf'
   
   #pdf = kit.to_pdf
