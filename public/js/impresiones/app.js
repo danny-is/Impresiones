@@ -67,8 +67,8 @@ $(document).ready(function(){
 			hideAllDivs();
 			$('.half').hide();
 			$('#loading').show();
-			$('#pdfBtn').hide();
-		 
+			$('.pdfBtn').hide();
+			$('.pdfBtn').html('Print');
 		});
 
 		this.get('#select/',function(){
@@ -79,8 +79,10 @@ $(document).ready(function(){
 		});
 
 	this.get('#print/',function(){
-			hideAllDivs();
-		 $('#pdfBtn').show();
+		hideAllDivs();
+		$('.pdfBtn').show();
+		$('.pdfBtn').html('Print');
+		
 		$('.titulo').html($('#txt_titulo').html());
 		
 		if(Item.count()==1){
@@ -102,7 +104,8 @@ $(document).ready(function(){
 		});
 		
 		this.get('#toPdf/',function(){
-			$('#pdfBtn').hide();
+			$('.pdfBtn').html('');
+			$('.pdfBtn').hide();
 			var context = this;
 			var html = $('body').html();
 			var j = encodeURIComponent(html);
@@ -133,7 +136,7 @@ $(document).ready(function(){
 		this.bind('loadRemoteData',function(){
 			var context = this;
 			$.ajax({
-				url: "/getDataLocal",
+				url: "/getData",
 				type:"GET",
 				context: document.body,
 				success: function(data){

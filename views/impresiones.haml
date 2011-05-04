@@ -6,7 +6,7 @@
 			#selectedBox
 				%h4 Ingrese el Titulo
 				%input{:id=>"txt_titulo"}
-				%a{:href => "#print/"} Generar Impresion
+				%a{:href => "#print/",:style=>"display: block"} Generar Impresion
 				%h4 Productos Seleccionados
 				%ul.selectedList
 			#searchBox
@@ -16,10 +16,10 @@
 	#printHalf
 		%ul.itemList
 		%ul.itemList
-		%a{:href=>"#toPdf/",:id=>"pdfBtn"} Print
+		%a.pdfBtn{:href=>"#toPdf/"}
 	#printFull
 		%ul.itemsList
-		%a{:href=>"#toPdf/",:id=>"pdfBtn"} Print
+		%a.pdfBtn{:href=>"#toPdf/"}
 
 		
 -['sammy', 'sammy.json', 'sammy.storage', 'sammy.template','/impresiones/app'].each do |js|

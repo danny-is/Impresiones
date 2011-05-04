@@ -273,6 +273,17 @@ a img {
 }
 
 /* line 9, ../../views/css/grid.sass */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 13, ../../views/css/grid.sass */
+.pdfBtn {
+  display: none;
+}
+
+/* line 16, ../../views/css/grid.sass */
 #container {
   margin-left: auto;
   margin-right: auto;
@@ -280,12 +291,21 @@ a img {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 14, ../../views/css/grid.sass */
+/* line 20, ../../views/css/grid.sass */
+#container .contentBox {
+  height: 850px;
+}
+/* line 24, ../../views/css/grid.sass */
 #container .full .titulo {
   background: url("http://btc.cr/images/full/franjaTitulo.jpg") no-repeat scroll top left;
   height: 100px;
 }
-/* line 20, ../../views/css/grid.sass */
+/* line 29, ../../views/css/grid.sass */
+#container .half {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 31, ../../views/css/grid.sass */
 #container .half .titulo {
   background: url("http://btc.cr/images/half/franjaTitulo.png") no-repeat scroll top left;
   display: inline;
@@ -294,9 +314,9 @@ a img {
   margin-right: 10px;
   width: 459px;
   margin-left: 0;
-  height: 100px;
+  height: 80px;
 }
-/* line 26, ../../views/css/grid.sass */
+/* line 37, ../../views/css/grid.sass */
 #container .half > img {
   display: inline;
   float: left;

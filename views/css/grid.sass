@@ -6,10 +6,20 @@
 
 $ninesixty-columns: 16
 
+body
+	margin: 0px
+	padding: 0px
+
+.pdfBtn
+	display: none
+
 #container
 	+grid-container
 	+clearfix
 	
+	.contentBox
+		height: 850px
+		
 	.full
 		.titulo
 			background: url('http://btc.cr/images/full/franjaTitulo.jpg') no-repeat scroll top left
@@ -17,12 +27,13 @@ $ninesixty-columns: 16
 			
 	
 	.half
+		+clearfix
 		.titulo
 			background: url('http://btc.cr/images/half/franjaTitulo.png') no-repeat scroll top left
 			+grid-unit-base
 			+grid-width(8,-1px)
 			+alpha
-			height: 100px
+			height: 80px
 		>img
 			+grid-unit-base
 			+grid-width(8,-1px)
