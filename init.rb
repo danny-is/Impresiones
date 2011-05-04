@@ -42,8 +42,7 @@ end
 post '/toPdf' do
   APP_ROOT = File.dirname(__FILE__)
   
-  Mime::Type.register_alias "application/pdf", :pdf
-  
+ 
   html = params['html'];
   #html.inspect
   kit = PDFKit.new(html, :page_size => 'Letter')
