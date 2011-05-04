@@ -3,7 +3,7 @@ var store;
 var cart;
 
 
-jQuery.download = function(url, data, method){
+ function download(url, data, method){
 	//url and data options required
 	if( url && data ){ 
 		//data can be string of parameters or array/object
@@ -125,7 +125,7 @@ $(document).ready(function(){
 			var html = $('body').html();
 			var j = encodeURIComponent(html);
 			
-			$.download('/toPdf',"html=" + j );
+			download('/toPdf',"html=" + j ,'post');
 
 		//	window.location='toPdf?html='+j;
 			//var j = this.json(html);

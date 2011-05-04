@@ -43,14 +43,14 @@ post '/toPdf' do
   APP_ROOT = File.dirname(__FILE__)
   
  
-  html = params['html'];
+  html = '<body>test<h1>test</h1></body>'#params['html'];
   #html.inspect
   kit = PDFKit.new(html, :page_size => 'Letter')
  kit.stylesheets << APP_ROOT + '/public/stylesheets/grid.css'
 
    #send_data(kit.to_pdf) 
  # Git an inline PDF
-  pdf = kit.to_pdf
+  #pdf = kit.to_pdf
   file = kit.to_file(APP_ROOT + '/tmp/print2.pdf')
   f = APP_ROOT + '/tmp/print2.pdf';
   send_file(f,  :type => 'application/pdf', :filename => "DocRaptor.pdf")
@@ -61,7 +61,7 @@ post '/toPdf' do
 end
 
 get '/print' do
-  haml :print6
+  haml :test
 end
 
 
