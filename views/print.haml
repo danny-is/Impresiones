@@ -1,6 +1,8 @@
 
 %h1 Lista la impresion de click en Imprimir Ahora para descargar el PDF....
 
+%h1
+	%a{:href=>"/"} Empezar de Nuevo
 %form{ :action=>"/toPdf" ,  :method=>"post"}
 	%input{:name=>"html" ,:id=>"html",:type=>"hidden" ,:value=>""}
 	%input{:type=>"submit" ,:value=>"Imprimir Ahora" }
