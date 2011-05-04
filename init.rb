@@ -56,6 +56,9 @@ post '/toPdf' do
   f = APP_ROOT + '/tmp/print1.pdf';
   send_file(f, :disposition => 'attachment', :filename => File.basename(f))
   #redirect '/temp/print.pdf'
+  
+  #pdf = kit.to_pdf
+  
 end
 
 get '/print' do
