@@ -84,7 +84,7 @@ $(document).ready(function(){
 		$('.pdfBtn').html('Print');
 		
 		var titulo = $('#txt_titulo').val();
-		$('.titulo').html(titulo);
+		$('.titulo').html('<h1>' + titulo + '</h1>');
 		
 		if(Item.count()==1){
 			$('.half').show();
