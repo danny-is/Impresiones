@@ -83,7 +83,8 @@ $(document).ready(function(){
 		$('.pdfBtn').show();
 		$('.pdfBtn').html('Print');
 		
-		$('.titulo').html($('#txt_titulo').html());
+		var titulo = $('#txt_titulo').val();
+		$('.titulo').html(titulo);
 		
 		if(Item.count()==1){
 			$('.half').show();
@@ -154,12 +155,18 @@ $(document).ready(function(){
 			$.each(productos, function(i, item) {
 				var producto = new Producto(item);
 				var features = producto.attr('especs');
+				var precio =  producto.attr('precio');
+				precio = precio.replace('US/','$ ');
+				producto.attr('precio',precio);
 				var lis = features.split(',');
 				var newVal='';
-				for(i in lis){
-					newVal += '<li>' + lis[i] + '</li>';
+				var i=0
+				while(i < 5 && i < lis.length){
+						newVal += '<li>' + lis[i] + '</li>';
+					i++;
 				}
-				 producto.attr('especs', newVal);
+				
+				producto.attr('especs', newVal);
 				producto.save();
 			});
 			context.redirect('#select/');

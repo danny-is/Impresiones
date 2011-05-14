@@ -5,8 +5,8 @@
 		#content.select
 			#selectedBox
 				%h4 Ingrese el Titulo
-				%input{:id=>"txt_titulo"}
-				%a{:href => "#print/",:style=>"display: block"} Generar Impresion
+				%input{:id=>"txt_titulo",:name=>"txt_titulo"}
+				%a{:href => "#print/",:style=>"display: block",:id=>"btnGoPrint"} Generar Impresion
 				%h4 Productos Seleccionados
 				%ul.selectedList
 			#searchBox

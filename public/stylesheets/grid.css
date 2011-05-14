@@ -58,7 +58,25 @@ a img {
   border: none;
 }
 
-/* line 3, ../../views/css/_select.sass */
+/* line 5, ../../views/css/_select.sass */
+#select h4 {
+  margin: 10px;
+}
+/* line 9, ../../views/css/_select.sass */
+#select .titulo {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+/* line 14, ../../views/css/_select.sass */
+#select #btnGoPrint {
+  margin: 10px;
+  color: #333333;
+  font-size: 14px;
+  font-decoration: none;
+}
+
+/* line 23, ../../views/css/_select.sass */
 .itemList {
   display: inline;
   float: left;
@@ -67,7 +85,7 @@ a img {
   width: 450px;
   margin-left: 0;
 }
-/* line 7, ../../views/css/_select.sass */
+/* line 27, ../../views/css/_select.sass */
 .itemList .imagen {
   margin-top: 20px;
   border: 1px solid #333333;
@@ -82,12 +100,12 @@ a img {
   text-align: center;
   margin: 15px;
 }
-/* line 17, ../../views/css/_select.sass */
+/* line 37, ../../views/css/_select.sass */
 .itemList .imagen img {
   max-width: 200px;
   max-height: 200px;
 }
-/* line 20, ../../views/css/_select.sass */
+/* line 40, ../../views/css/_select.sass */
 .itemList .details {
   margin-top: 20px;
   display: inline;
@@ -98,14 +116,14 @@ a img {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 26, ../../views/css/_select.sass */
+/* line 46, ../../views/css/_select.sass */
 .itemList .details h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 3px;
   margin-top: 20px;
 }
-/* line 32, ../../views/css/_select.sass */
+/* line 52, ../../views/css/_select.sass */
 .itemList .details h3 {
   font-size: 20px;
   font-weight: bold;
@@ -117,19 +135,19 @@ a img {
   margin-top: 7px;
   margin-bottom: 7px;
 }
-/* line 42, ../../views/css/_select.sass */
+/* line 62, ../../views/css/_select.sass */
 .itemList .details h4 {
   margin-top: 40px;
   font-size: 17px;
   min-height: 100px;
 }
-/* line 46, ../../views/css/_select.sass */
+/* line 66, ../../views/css/_select.sass */
 .itemList .details ul {
   overflow: hidden;
   margin-bottom: 5px;
   margin-top: 40px;
 }
-/* line 50, ../../views/css/_select.sass */
+/* line 70, ../../views/css/_select.sass */
 .itemList .details ul li {
   font-size: 15px;
   padding: 0px;
@@ -138,7 +156,7 @@ a img {
   text-transform: capitalize;
 }
 
-/* line 58, ../../views/css/_select.sass */
+/* line 78, ../../views/css/_select.sass */
 .itemsList > li {
   margin-top: 30px;
   display: inline;
@@ -146,43 +164,44 @@ a img {
   margin-left: 10px;
   margin-right: 10px;
   width: 220px;
-  height: 300px;
+  height: 390px;
   overflow: hidden;
   padding-left: 65px;
 }
-/* line 66, ../../views/css/_select.sass */
+/* line 86, ../../views/css/_select.sass */
 .itemsList > li h2 {
   font-size: 15px;
   font-weight: bold;
   width: 200px;
   margin-bottom: 3px;
+  margin-top: 8px;
 }
-/* line 71, ../../views/css/_select.sass */
+/* line 92, ../../views/css/_select.sass */
 .itemsList > li h3 {
   font-size: 19px;
   font-weight: bold;
   width: 200px;
   color: #244b84;
 }
-/* line 77, ../../views/css/_select.sass */
+/* line 97, ../../views/css/_select.sass */
 .itemsList > li .imagen {
   overflow: hidden;
   margin-left: 25 px;
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
 }
-/* line 82, ../../views/css/_select.sass */
+/* line 102, ../../views/css/_select.sass */
 .itemsList > li .imagen img {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
 }
-/* line 85, ../../views/css/_select.sass */
+/* line 105, ../../views/css/_select.sass */
 .itemsList > li ul {
-  max-height: 92px;
+  max-height: 140px;
   overflow: hidden;
   margin-bottom: 5px;
 }
-/* line 90, ../../views/css/_select.sass */
+/* line 110, ../../views/css/_select.sass */
 .itemsList > li ul li {
   font-size: 12px;
   padding: 0px;
@@ -191,7 +210,7 @@ a img {
   text-transform: capitalize;
 }
 
-/* line 99, ../../views/css/_select.sass */
+/* line 119, ../../views/css/_select.sass */
 #searchBox {
   height: 600px;
   display: inline;
@@ -203,19 +222,19 @@ a img {
   margin-right: 0;
   background-color: #efefef;
 }
-/* line 106, ../../views/css/_select.sass */
+/* line 126, ../../views/css/_select.sass */
 #searchBox .title {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
   margin: 10px;
 }
-/* line 111, ../../views/css/_select.sass */
+/* line 131, ../../views/css/_select.sass */
 #searchBox input {
   margin: 10px;
   padding: 10px;
 }
-/* line 114, ../../views/css/_select.sass */
+/* line 134, ../../views/css/_select.sass */
 #searchBox li {
   display: inline;
   float: left;
@@ -228,12 +247,12 @@ a img {
   border: 1px #333333 solid;
   margin-bottom: 10px;
 }
-/* line 122, ../../views/css/_select.sass */
+/* line 142, ../../views/css/_select.sass */
 #searchBox li a {
   color: #333333;
 }
 
-/* line 125, ../../views/css/_select.sass */
+/* line 145, ../../views/css/_select.sass */
 #selectedBox {
   display: inline;
   float: left;
@@ -246,28 +265,28 @@ a img {
   border: 1px solid #999999;
   height: 600px;
 }
-/* line 132, ../../views/css/_select.sass */
+/* line 152, ../../views/css/_select.sass */
 #selectedBox h4 {
   color: #333333;
   font-size: 16px;
   margin-top: 8px;
   margin-left: 8px;
 }
-/* line 137, ../../views/css/_select.sass */
+/* line 157, ../../views/css/_select.sass */
 #selectedBox h5 {
   color: #999999;
   font-size: 12px;
   margin-left: 8px;
   margin-bottom: 8px;
 }
-/* line 142, ../../views/css/_select.sass */
+/* line 162, ../../views/css/_select.sass */
 #selectedBox li {
   background-color: #efefef;
   padding: 10px;
   border: 1px #333333 solid;
   margin: 6px;
 }
-/* line 147, ../../views/css/_select.sass */
+/* line 167, ../../views/css/_select.sass */
 #selectedBox li a {
   color: #333333;
 }
