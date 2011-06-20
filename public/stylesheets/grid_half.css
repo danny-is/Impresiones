@@ -1,82 +1,88 @@
-/* line 14, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
-  color: black;
-  background: white;
 }
 
-/* line 19, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
-  vertical-align: middle;
 }
 
-/* line 23, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: "" "";
+  quotes: none;
 }
-/* line 96, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
+  content: none;
 }
 
-/* line 27, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 4, ../../views/css/_list.sass */
+/* line 115, /usr/local/lib/ruby/gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 4, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 .select .producto {
   height: 35px;
   margin-bottom: 4px;
   background-color: #efefef;
   border: 1px solid #333333;
 }
-/* line 9, ../../views/css/_list.sass */
+/* line 9, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 .select .name {
   line-height: 13px;
   padding: 5px;
   color: #333333;
   font-size: 11px;
 }
-/* line 14, ../../views/css/_list.sass */
+/* line 14, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 .select .description, .select .price, .select .image, .select .code {
   display: none;
 }
-/* line 18, ../../views/css/_list.sass */
+/* line 18, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 .select #searchBox .producto {
   display: inline;
   float: left;
@@ -85,7 +91,7 @@ a img {
   width: 215px;
   margin-right: 0;
 }
-/* line 24, ../../views/css/_list.sass */
+/* line 24, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 .select #selectedBox .producto {
   display: inline;
   float: left;
@@ -94,12 +100,15 @@ a img {
   width: 184px;
 }
 
-/* line 28, ../../views/css/_list.sass */
+/* line 28, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 {
   overflow: hidden;
   *zoom: 1;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
 }
-/* line 30, ../../views/css/_list.sass */
+/* line 33, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 .image {
   display: inline;
   float: left;
@@ -108,7 +117,7 @@ a img {
   width: 184px;
   text-align: center;
 }
-/* line 33, ../../views/css/_list.sass */
+/* line 36, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 .image img {
   border: 1px #afafaf solid;
   -webkit-border-radius: 13px 13px;
@@ -120,7 +129,7 @@ a img {
   width: 140px;
   height: 140px;
 }
-/* line 38, ../../views/css/_list.sass */
+/* line 41, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 .info {
   display: inline;
   float: left;
@@ -129,19 +138,19 @@ a img {
   width: 280px;
   margin-left: 0;
 }
-/* line 41, ../../views/css/_list.sass */
+/* line 44, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 .info h1 {
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: 16px;
   font-family: "Cabin", Verdana;
 }
-/* line 46, ../../views/css/_list.sass */
+/* line 49, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 .info p {
   font-size: 11px;
   font-family: "Droid Sans", Verdana;
 }
-/* line 49, ../../views/css/_list.sass */
+/* line 52, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_list.sass */
 #print1 .info .price {
   font-family: "Cabin", Verdana;
   margin-top: 8px;
@@ -153,73 +162,244 @@ a img {
   border-bottom: 1px dotted #333333;
 }
 
-/* line 2, ../../views/css/_select.sass */
-#breadcrum .button {
-  background-color: #333333;
+/* line 5, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#select h4 {
+  margin: 10px;
 }
-/* line 4, ../../views/css/_select.sass */
-#breadcrum .button a {
-  padding: 5px;
-  color: white;
-  display: block;
+/* line 7, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#select #btnGoPrint {
+  margin: 10px;
+  color: #333333;
+  font-size: 14px;
+  font-decoration: none;
+}
+/* line 14, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#select #txt_titulo {
+  margin: 10px;
 }
 
-/* line 9, ../../views/css/_select.sass */
+/* line 18, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.titulo h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* line 27, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 450px;
+  margin-left: 0;
+}
+/* line 31, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .imagen {
+  margin-top: 20px;
+  border: 1px solid #333333;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  margin: 15px;
+}
+/* line 41, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .imagen img {
+  max-width: 200px;
+  max-height: 200px;
+}
+/* line 44, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .details {
+  margin-top: 20px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 215px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 50, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .details h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 20px;
+}
+/* line 56, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #244b84;
+  border-top: 3px dotted #efefef;
+  border-bottom: 3px dotted #efefef;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+/* line 66, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .details h4 {
+  margin-top: 40px;
+  font-size: 17px;
+  min-height: 100px;
+}
+/* line 70, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .details ul {
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+/* line 74, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemList .details ul li {
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+/* line 82, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li {
+  margin-top: 30px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  height: 390px;
+  overflow: hidden;
+  padding-left: 65px;
+}
+/* line 90, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li h2 {
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 3px;
+  margin-top: 8px;
+}
+/* line 96, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li h3 {
+  font-size: 19px;
+  font-weight: bold;
+  width: 200px;
+  color: #244b84;
+}
+/* line 101, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li .imagen {
+  overflow: hidden;
+  margin-left: 25 px;
+  width: 200px;
+  height: 200px;
+}
+/* line 106, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li .imagen img {
+  width: 200px;
+  height: 200px;
+}
+/* line 109, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li ul {
+  max-height: 140px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+/* line 114, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+.itemsList > li ul li {
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+
+/* line 123, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
 #searchBox {
   height: 600px;
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 710px;
+  width: 690px;
   border: 1px solid #999999;
   margin-right: 0;
   background-color: #efefef;
 }
-/* line 16, ../../views/css/_select.sass */
+/* line 130, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
 #searchBox .title {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
   margin: 10px;
 }
-/* line 21, ../../views/css/_select.sass */
+/* line 135, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
 #searchBox input {
   margin: 10px;
   padding: 10px;
 }
-/* line 24, ../../views/css/_select.sass */
-#searchBox .productList {
-  overflow: hidden;
-  *zoom: 1;
+/* line 138, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#searchBox li {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 155px;
+  background-color: #efefef;
+  height: 80px;
+  padding: 10px;
+  border: 1px #333333 solid;
+  margin-bottom: 10px;
+}
+/* line 146, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#searchBox li a {
+  color: #333333;
 }
 
-/* line 27, ../../views/css/_select.sass */
+/* line 149, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
 #selectedBox {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 232px;
+  width: 236px;
   margin-right: 0;
   margin-left: 0;
   background-color: #efefef;
   border: 1px solid #999999;
   height: 600px;
 }
-/* line 34, ../../views/css/_select.sass */
+/* line 156, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
 #selectedBox h4 {
   color: #333333;
   font-size: 16px;
   margin-top: 8px;
   margin-left: 8px;
 }
-/* line 41, ../../views/css/_select.sass */
+/* line 161, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
 #selectedBox h5 {
   color: #999999;
   font-size: 12px;
   margin-left: 8px;
   margin-bottom: 8px;
+}
+/* line 166, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#selectedBox li {
+  background-color: #efefef;
+  padding: 10px;
+  border: 1px #333333 solid;
+  margin: 6px;
+}
+/* line 171, /Users/danny/Documents/Projects/ruby/Impresiones-BTC/views/css/_select.sass */
+#selectedBox li a {
+  color: #333333;
 }
 
 /* line 12, ../../views/css/grid_half.sass */

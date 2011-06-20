@@ -1,0 +1,65 @@
+Email 1:
+Hola Danny, 
+
+El problema del pago sigue en pie...de hecho ahora está peor.
+
+ver screen shot.
+
+Todavía no puedo meter nada en fecha de próximo pago, me quitaron: la modalidad de pago, el modo de pago, el asterisco, cambiaron fecha de renovación por fecha de vencimiento y me añadieron el número de póliza...que en realidad no tiene sentido que esté ahí. 
+
+Te comento que me urge poder hacer renovaciones y próximos pagos...esto me está atrasando mucho el trabajo.
+
+Quedo a la espera de tus comentarios.
+
+Saludos,
+
+Email 2:
+Hola dANNY,
+
+Necesito la opción de hacer un proximo pago desde la póliza.
+
+Gracias,
+
+Email 3:
+Danny te comento que al realizar un próximo pago no me da la opción de meter el próximo pago manualmente. 
+
+Por favor revisar.
+
+Saludos,
+
+Email 4:
+Hola Danny,
+
+Ocupo que en el workflow de renovaciones, la vista incluya:
+
+agente, póliza, modalidad de pago, fecha de próximo pago, fecha de renovación 
+
+Necesito que pueda organizarlos por fecha o por agente.
+
+Y te recuerdo que necesito ver la opción de próximo pago desde la póliza (a la par de renovación).
+
+Después acabo de notar que al renovar una póliza, el estado cambia automáticamente a Renovación creada... está bien que se quede así?? Te digo de una vez, yo no voy a tener tiempo de cambiar el estado a sin novedad después de haber hecho la renovación.
+
+Quedo a la espera de tus valiosos comentarios.
+
+Saludos,
+
+Email 5:
+Hola Danny, 
+
+El problema del pago sigue en pie...de hecho ahora está peor.
+
+ver screen shot.
+
+Todavía no puedo meter nada en fecha de próximo pago, me quitaron: la modalidad de pago, el modo de pago, el asterisco, cambiaron fecha de renovación por fecha de vencimiento y me añadieron el número de póliza...que en realidad no tiene sentido que esté ahí. 
+
+Te comento que me urge poder hacer renovaciones y próximos pagos...esto me está atrasando mucho el trabajo.
+
+Quedo a la espera de tus comentarios.
+
+Saludos,
+
+192.168.1.100
+
+
+
